@@ -48,10 +48,10 @@ function WebTabsLayout() {
         }}
       />
       <WebTabs.Screen
-        name="info"
+        name="game"
         options={{
-          title: "Info",
-          tabBarIcon: (props) => <MaterialIcons {...props} name="info" />,
+          title: "Flappy Bird",
+          tabBarIcon: (props) => <MaterialIcons {...props} name="games" />,
         }}
       />
     </WebTabs>
@@ -72,13 +72,13 @@ function NativeTabsLayout() {
           })}
         />
       </NativeTabs.Trigger>
-      <NativeTabs.Trigger name="info">
-        <NativeTabs.Trigger.Label>Info</NativeTabs.Trigger.Label>
+      <NativeTabs.Trigger name="game">
+        <NativeTabs.Trigger.Label>Flappy Bird</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon
           {...Platform.select({
-            ios: { sf: "cursorarrow.rays" },
+            ios: { sf: "gamecontroller" },
             default: {
-              src: <NativeTabs.Trigger.VectorIcon family={MaterialIcons} name="info" />,
+              src: <NativeTabs.Trigger.VectorIcon family={MaterialIcons} name="games" />,
             },
           })}
         />
